@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+
+android {
+    buildToolsVersion '28.0.3'
+    compileSdkVersion 28
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.emptregas.emptregas"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.1"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:+'
+    implementation 'com.android.support:support-v4:+'
+    implementation 'com.android.support:design:+'
+    implementation 'com.android.support:multidex:1.0.3'
+    //noinspection GradleCompatible
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'io.apptik.widget:multislider:1.3'
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-database:16.0.5'
+    //implementation 'com.firebaseui:firebase-ui-database:3.1.0'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.google.firebase:firebase-core:16.0.5'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+    implementation 'ivb.com.materialstepper:material-stepper:0.0.2'
+
+
+    implementation 'com.jakewharton:butterknife:9.0.0-rc1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
+    //Librerias Jackson Converter
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.8.5'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.8.5'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.8.5'
+    implementation 'com.squareup.retrofit2:converter-jackson:2.2.0'
+    //okhtpp
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+    //Rectrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    //Gson Converter
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    //Login Interceptor
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+//converter Moshi
+    implementation 'com.squareup.retrofit2:converter-moshi:2.3.0'
+    implementation 'com.android.support:gridlayout-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.basgeekball:awesome-validation:2.0'
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+
+    //Buton no recuerdo
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
+}
+
+apply plugin: 'com.google.gms.google-services'

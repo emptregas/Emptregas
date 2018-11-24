@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.emptregas.emptregas">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCOOAOQFamhVJPKcl5qxv7iD9pon4oDsCE" />
+
+        <service
+            android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeFullScreen"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:label="@string/label_cart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RefineActivity"
+            android:label="@string/label_refine"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SupportActivity"
+            android:label="@string/label_support"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReviewsActivity"
+            android:label="@string/label_reviews"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RestaurantMenuActivity"
+            android:label="@string/label_restaurant_menu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rest_detail.RestaurantDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FoodDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".location.LocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".checkout.CheckoutActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".OrderDetailsActivity"></activity>
+    </application>
+
+</manifest>

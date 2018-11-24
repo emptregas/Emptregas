@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "346904779584",
+    "firebase_url": "https://bdemp-956d3.firebaseio.com",
+    "project_id": "bdemp-956d3",
+    "storage_bucket": "bdemp-956d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346904779584:android:a0ed76565096e24c",
+        "android_client_info": {
+          "package_name": "com.emptregas.emptregas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346904779584-57vp0vv4mjagi5j458dihrd43etcn7l8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.emptregas.emptregas",
+            "certificate_hash": "294b12c9057a7ff325a707c990f7d7946945adb2"
+          }
+        },
+        {
+          "client_id": "346904779584-pcrutljbtha5kpm2ehddok8et9450508.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.emptregas.emptregas",
+            "certificate_hash": "66c3899814aa2c2de210c5583e6d61566f73bae2"
+          }
+        },
+        {
+          "client_id": "346904779584-9k8cdhl1maqh2lttuebknh7jehi2ihh2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFjzVc7MSA8YdUn1XX8Xyp0Uv0w-BOL_o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346904779584-9k8cdhl1maqh2lttuebknh7jehi2ihh2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
